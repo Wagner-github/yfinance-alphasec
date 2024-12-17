@@ -12,7 +12,7 @@ with st.sidebar:
 
 # Format market cap and enterprise value into something readable
 def format_value(value):
-    suffixes = ["", "K", "M", "B", "T"]
+    suffixes = ["", "K", "M", "Md"]
     suffix_index = 0
     while value >= 1000 and suffix_index < len(suffixes) - 1:
         value /= 1000
